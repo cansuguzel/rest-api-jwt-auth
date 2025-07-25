@@ -2,6 +2,8 @@
 This project implements two separate RESTful APIs — one for user management and another for note management — built with Python (Flask) and PostgreSQL. All endpoints are secured using JWT (JSON Web Token) based authentication. User passwords are securely hashed using Werkzeug before storing in the database. Access control and user authorization are enforced via custom decorators (@token_required, @self_access_required, @owner_required) to ensure security across all routes.
 
 # Project Structure
+
+```bash
 rest-api-jwt/
 │
 ├── app/
@@ -21,8 +23,7 @@ rest-api-jwt/
 ├── config.py
 ├── requirements.txt
 └── README.md
-
- 
+``` 
 # Clone the repository
 
 ```bash

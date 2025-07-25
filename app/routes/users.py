@@ -73,9 +73,6 @@ def update_user(user, user_id):
             return {"message": "Username already taken."}, 409
         user.username = data["username"]
 
-
-    if data.get("username"):
-        user.username = data["username"]
     if data.get("password"):
         user.set_password(data["password"])
 
